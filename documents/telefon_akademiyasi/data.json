@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Telefon bilan bog'liq muammolar",
+    "emoji": "📱",
+    "items": [
+      {
+        "name": "Telefon qotib ishlamoqda.",
+        "emoji": "🥶",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefon_qotib_ishlamoqda.8zz"
+      },
+      {
+        "name": "Xotira to'lib qoldi",
+        "emoji": "💾",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/xotira_to’lib_qoldi.8zz"
+      },
+      {
+        "name": "Batareya tez tugayapti",
+        "emoji": "🔋",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/batareya_tez_tugayapti.8zz"
+      },
+      {
+        "name": "Telefon sekin quvvatlanmoqda",
+        "emoji": "🔌",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefon_sekin_quvvatlanyapti.8zz"
+      },
+      {
+        "name": "Telefonda reklama chiqmoqa (Zzzz qivordi)",
+        "emoji": " ",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonda_reklamani_yo'qotish.8zz"
+      },
+      {
+        "name": "Telefonim qizib ketdi.",
+        "emoji": "🔥",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonim_qizib_ketdi.8zz"
+      },
+      {
+        "name": "Fastboot yozuvi chiqib qoldi. U nima? (Tuzatish usuli).",
+        "emoji": "⚙️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/fastboot_yozuvi_chiqib_qoldi_tuzatish_usuli.8zz"
+      },
+      {
+        "name": "Telefonimdagi Hamma narsani o’chirib yubormoqchiman.",
+        "emoji": "🗑️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonimdagi_hamma_narsani_o’chirib_yubormoqchiman.8zz"
+      },
+{
+        "name": "Matnlar kichiklik/kattalik qilmoqda.",
+        "emoji": "📏",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/matnlarni_katta_kichik_qilish.8zz"
+      }
+    ]
+  }
+    ]
+  },
+  {
+    "name": "Internet va ulanish muammolari",
+    "emoji": "🌐",
+    "items": [
+      {
+        "name": "Internet ishlamay qoldi",
+        "emoji": "❌",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/internet_ishlamay_qoldi.8zz"
+      },
+      {
+        "name": "Internet sekin ishlamoqda",
+        "emoji": "🐢",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/internet_sekin_ishlamoqda.8zz"
+      },
+      {
+        "name": "Internet ko'p sarf bo'lyapti",
+        "emoji": "💸",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/internet_ko’p_sarf_bo’lyapti.8zz"
+      },
+      {
+        "name": "Wi-Figa ulanmoqchiman, ammo wifi ko’rinmayapti.",
+        "emoji": "📶",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/wi-figa_ulanmoqchiman,_ammo_wifi_ko’rinmayapti.8zz"
+      },
+      {
+        "name": "Bluetooth nega kerak?",
+        "emoji": "🔵",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/bluetooth_nega_kerak.8zz"
+      },
+      {
+        "name": "Telefonda Internet tarqatishni qanday usullari bor?",
+        "emoji": "📡",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonda_internet_tarqatishni_qanday_usullari_bor.8zz"
+      }
+    ]
+  },
+  {
+    "name": "Ilovalar va dasturlar",
+    "emoji": "📲",
+    "items": [
+      {
+        "name": "Instagram ocholmayapman",
+        "emoji": "📸",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/instagram_ochish_hisob_yaratish.8zz"
+      }
+      ,
+      {
+        "name": "Instagram hisobimga kira olmayapman",
+        "emoji": "🔐",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/instagram_hisobimga_kira_olmayapman.8zz"
+      },
+      {
+        "name": "Instagram hisobimni yo’q qilmoqchiman",
+        "emoji": "👋",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/instagram_hisobni_o'chirish.8zz"
+      },
+      {
+        "name": "Telegram ochmoqchiman",
+        "emoji": "✈️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telegram_ochish.8zz"
+      },
+      {
+        "name": "Telegramda kod kelmayapti",
+        "emoji": "✉️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telegramdan_kod_kelmasa.8zz"
+      },
+      {
+        "name": "Telegramda hamma narsa ochilib(yuklanib) ketyapti",
+        "emoji": "🔄",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telegramda_avtoyuklashni_o'chirish.8zz"
+      },
+      {
+        "name": "Telegram hisobimni o’chirmoqchiman",
+        "emoji": "🗑️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telegram_hisobini_o'chirish.8zz"
+      },
+      {
+        "name": "WhatsApp ochmoqchiman",
+        "emoji": "💬",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/whatsapp_hisobi_ochish.8zz"
+      },
+      {
+        "name": "WhatsApp yangilash so’ramoqda",
+        "emoji": "⬆️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/whatsapp_yangilash.8zz"
+      },
+      {
+        "name": "Ilovalarni play marketsiz o’rnatsa bo’ladimi?",
+        "emoji": "📥",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/play_marketsiz,_ilovalar_o'rnatish.8zz"
+      },
+      {
+        "name": "Play Market uchun hisob qanday yaratiladi?",
+        "emoji": "➕",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/play_market_uchun_hisob_qanday_yaratiladi.8zz"
+      },
+      {
+        "name": "YouTubedan ekranni o’chirib musiqa eshitmoqchiman",
+        "emoji": "🎵",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/youtubedan_ekranni_o’chirib_musiqa_eshitmoqchiman.8zz"
+      },
+      {
+        "name": "Elektron Kitob va hujjatlarni ocholmayapman",
+        "emoji": "📚",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/hujjatlarni_telefonda_ochish.8zz"
+      },
+      {
+        "name": "Chromedan zerikdim. Boshqa zo’r Browser bormi?",
+        "emoji": "🌍",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/chromedan_zerikdim._boshqa_zo’r_browser_bormi.8zz"
+      },
+      {
+        "name": "Menda Musiqa ilovasi yo’q",
+        "emoji": "🎶",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/menda_musiqa_ilovasi_yo'q.8zz"
+      }
+    ]
+  },
+  {
+    "name": "Media va fayllar",
+    "emoji": "📁",
+    "items": [
+      {
+        "name": "Barcha fayllarni SD-Karta(chip)ga o’tkazish",
+        "emoji": "📤",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/chipga_fayl_o'tkazish.8zz"
+      },
+      {
+        "name": "Rasmga olsam Chipga tushishi kerak.",
+        "emoji": "📸",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/rasmga_olsam_chipga_tushishi_kerak.8zz"
+      },
+      {
+        "name": "Qo’shiqlarda BASS oshirmoqchiman.",
+        "emoji": "🔊",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/qo’shiqlarda_bass_oshirmoqchiman.8zz"
+      },
+      {
+        "name": "Tiniq ovoz yozmoqchiman.",
+        "emoji": "🎤",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/tiniq_ovoz_yozmoqchiman.8zz"
+      },
+      {
+        "name": "Fon rasmini o’zgartirish",
+        "emoji": "🖼️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/fon_rasmini_o'zgartirish.8zz"
+      },
+      {
+        "name": "Chaqiruvga musiqa, qanday qo’yiladi?",
+        "emoji": "📞",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/chaqiruvga_musiqa,_qanday_qo’yiladi.8zz"
+      }
+    ]
+  },
+  {
+    "name": "Xavfsizlik va kontent",
+    "emoji": "🔒",
+    "items": [
+      {
+        "name": "Negadir Telefonimga Behayo kontentlar yuklanib qolmoqda😢.",
+        "emoji": "🔞",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/negadir_telefonimga_behayo_narsalar_kelib_qolyapti.8zz"
+      },
+      {
+        "name": "Har qanday ilova yoki sayt parollarni tiklash",
+        "emoji": "🔑",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/har_qanday_ilova_yoki_sayt_parollarni_tiklash.8zz"
+      }
+    ]
+  },
+  {
+    "name": "O'yinlar",
+    "emoji": "🎮",
+    "items": [
+      {
+        "name": "O’yinlarda qanday qilib tez g’olib bo’lish mumkin?",
+        "emoji": "🏆",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/o'yinlarda_tez_g'olib_bo'lish.8zz"
+      },
+      {
+        "name": "Telefonda PlayStation o’yinlarini o’ynash",
+        "emoji": "🕹️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonda_playstation_o’yinlarini_o’ynash.8zz"
+      },
+      {
+        "name": "Telefonda NOKIA o’yinlarini o’ynash.",
+        "emoji": "🐍",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/telefonda_nokia_o’yinlarini_o’ynash.8zz"
+      }
+    ]
+  },
+  {
+    "name": "Qurilma xaridi va maslahatlar",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Yangi Telefon sotib olyapman, nimaga e’tibor beray?",
+        "emoji": "✨",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/yangi_telefon_sotib_olyapman,_nimaga_e’tibor_beray.8zz"
+      },
+      {
+        "name": "Eski telefon olyapman, nimaga e’tibor beray?",
+        "emoji": "♻️",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/eski_telefon_olyapman,_nimaga_e’tibor_beray.8zz"
+      },
+      {
+        "name": "Zaryadchik olyapman qaysini olay?",
+        "emoji": "⚡",
+        "link": "https://raw.githubusercontent.com/BIOSTEENYC/telefon_akademiyasi/master/documents/zaryadchik_olyapman_qaysini_olay.8zz"
+      }
+    ]
+  },
