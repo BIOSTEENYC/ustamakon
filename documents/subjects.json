@@ -3,12 +3,12 @@
     {
       "name": "Kompyuter muammolarini hal etish: Kompyuter sirlari",
       "emoji": "💻",
-      "topic_list_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics.json"
+      "topic_list_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/data.json"
     },
     {
       "name": "Telefon muammolarini hal etish: Telefon Akademiyasi",
       "emoji": " ",
-      "topic_list_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics.json"
+      "topic_list_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/data.json"
     }
   ]
 }
