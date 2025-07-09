@@ -1,254 +1,252 @@
-{
-  "Category": [
-    {
-      "nomi": "Windows O'rnatish va Aktivatsiya",
-      "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/imgfolder00.jpg",
-      "havolalar": [
-        {
-          "sarlavha": "Windows aktivatsiya qilish",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img00.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc00.pdf"
-        },
-        {
-          "sarlavha": "Windows 11 o’rnatish",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img01.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc01.pdf"
-        },
-        {
-          "sarlavha": "Windows 10 o’rnatish",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img02.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc02.pdf"
-        },
-        {
-          "sarlavha": "Windowsni kompyuterga emas, Fleshkaga o’rnatsa bo’ladimi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img03.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc03.pdf"
-        },
-        {
-          "sarlavha": "Windows menga yoqmaydi boshqa tizimlar bormi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img04.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc04.pdf"
-        },
-        {
-          "sarlavha": "Tezkor Windows MODlari bormi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder00/img05.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder00/doc05.pdf"
-        }
-      ]
-    },
-    {
-      "nomi": "Kompyuter Sozlamalari va Muammolar",
-      "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/imgfolder01.jpg",
-      "havolalar": [
-        {
-          "sarlavha": "Xotira to’lib qoldi",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img06.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc06.pdf"
-        },
-        {
-          "sarlavha": "Wi-FI ishlamayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img07.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc07.pdf"
-        },
-        {
-          "sarlavha": "Hotspot ishlamayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img08.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc08.pdf"
-        },
-        {
-          "sarlavha": "Bluetooth ishlamayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img09.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc09.pdf"
-        },
-        {
-          "sarlavha": "Quloqchinda ovoz eshitilmayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img10.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc10.pdf"
-        },
-        {
-          "sarlavha": "Ekran negativ ko’rinyapti nima qilay?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img11.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc11.pdf"
-        },
-        {
-          "sarlavha": "Kamera ishlamayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img12.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc12.pdf"
-        },
-        {
-          "sarlavha": "Hozirgi Dastur 'Не отвечает' bo'lib qoldi, nima qilay?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img13.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc13.pdf"
-        },
-        {
-          "sarlavha": "Kompyuter qizib ketdi",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img14.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc14.pdf"
-        },
-        {
-          "sarlavha": "TouchPad ishlamayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img15.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc15.pdf"
-        },
-        {
-          "sarlavha": "Drayverlar qanday yangilanadi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img16.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc16.pdf"
-        },
-        {
-          "sarlavha": "Sichqoncha juda tez / juda sekin ishlayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img17.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc17.pdf"
-        },
-        {
-          "sarlavha": "Ekran masshtabi qanday o’zgartiriladi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img18.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc18.pdf"
-        },
-        {
-          "sarlavha": "Batareya tez tugayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img19.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc19.pdf"
-        },
-        {
-          "sarlavha": "Kompyuter yoqilganda Dasturlar o’zi ochilib ketypati",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img20.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc20.pdf"
-        },
-        {
-          "sarlavha": "Kesh fayllarni qanday tozalash mumkin?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img21.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc21.pdf"
-        },
-        {
-          "sarlavha": "Keraksiz hususiyatlarni o’chirib qo’ymoqchiman.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img22.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc22.pdf"
-        },
-        {
-          "sarlavha": "BIOS menuga kira olmayapman.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img23.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc23.pdf"
-        },
-        {
-          "sarlavha": "BOOT OPTION’(BOOT MENU)ga kira olmayapman.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img24.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc24.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterim modelini qanday bilaman?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img25.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc25.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterimni tozalab tashlamoqchiman. Zavod.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder01/img26.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder01/doc26.pdf"
-        }
-      ]
-    },
-    {
-      "nomi": "Ma'lumotlarni Qayta Tiklash",
-      "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder02/imgfolder02.jpg",
-      "havolalar": [
-        {
-          "sarlavha": "Fleshkadagi ma’lumotlarni yo’qotdim nima qilay?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder02/img27.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder02/doc27.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterimdagi ma’lumotlarni yo’qotdim nima qilay?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder02/img28.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder02/doc28.pdf"
-        }
-      ]
-    },
-    {
-      "nomi": "Dasturlar va Media",
-      "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/imgfolder03.jpg",
-      "havolalar": [
-        {
-          "sarlavha": "Menda Ofis dasturlari yo’q ekan? (Word, Excel, PowerPoint)",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img29.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc29.pdf"
-        },
-        {
-          "sarlavha": "Yaxshi musiqa playeri qaysi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img30.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc30.pdf"
-        },
-        {
-          "sarlavha": "Yaxshi video playeri qaysi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img31.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc31.pdf"
-        },
-        {
-          "sarlavha": "Ekranni qanday video yozish mumkin?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img32.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc32.pdf"
-        },
-        {
-          "sarlavha": "Skrinshot olsam xotiraga tushmayapti",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img33.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc33.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterga Play Market qo’ysa bo’ladimi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img34.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc34.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterda NOKIA o’yinlarini o’ynamoqchiman.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img35.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc35.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterim Mavzusini o’zgartirmoqchiman.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img36.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc36.pdf"
-        },
-        {
-          "sarlavha": "YouTubedan qanday qilib video yuklab olish mumkin?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img37.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc37.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterda dasturlar do’koni bormi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder03/img38.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder03/doc38.pdf"
-        }
-      ]
-    },
-    {
-      "nomi": "Boshqa",
-      "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/imgfolder04.jpg",
-      "havolalar": [
-        {
-          "sarlavha": "Kompyuterim kuchsiz, meni ham o’yin o’ynagim keladi.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/img39.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder04/doc39.pdf"
-        },
-        {
-          "sarlavha": "Kompyuter sotib olmoqchiman nimalarga e’tibor beray?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/img40.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder04/doc40.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterchilar meni qanday aldashadi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/img41.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder04/doc41.pdf"
-        },
-        {
-          "sarlavha": "Antiviruslar men uchun kerakmi o’zi?",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/img42.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder04/doc42.pdf"
-        },
-        {
-          "sarlavha": "Kompyuterni boshqa kompyuterdan boshqarish.",
-          "rasm": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/images/category/imgfolder04/img43.jpg",
-          "link": "https://raw.githubusercontent.com/BIOSTEENYC/kompyuter_sirlari/master/assets/documents/docfolder04/doc43.pdf"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "category_name": "Windows O'rnatish va Aktivatsiya",
+    "icon_emoji": "💾",
+    "guides": [
+      {
+        "title": "Windows aktivatsiya qilish",
+        "icon_emoji": "🔑",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc00.ustamakon_doc"
+      },
+      {
+        "title": "Windows 11 o’rnatish",
+        "icon_emoji": "🖥️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc01.ustamakon_doc"
+      },
+      {
+        "title": "Windows 10 o’rnatish",
+        "icon_emoji": "💻",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc02.ustamakon_doc"
+      },
+      {
+        "title": "Windowsni kompyuterga emas, Fleshkaga o’rnatsa bo’ladimi?",
+        "icon_emoji": "💽",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc03.ustamakon_doc"
+      },
+      {
+        "title": "Windows menga yoqmaydi boshqa tizimlar bormi?",
+        "icon_emoji": "🐧",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc04.ustamakon_doc"
+      },
+      {
+        "title": "Tezkor Windows MODlari bormi?",
+        "icon_emoji": "⚡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder00/doc05.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Kompyuter Sozlamalari va Muammolar",
+    "icon_emoji": "⚙️",
+    "guides": [
+      {
+        "title": "Xotira to’lib qoldi",
+        "icon_emoji": "🗃️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc06.ustamakon_doc"
+      },
+      {
+        "title": "Wi-FI ishlamayapti",
+        "icon_emoji": "📡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc07.ustamakon_doc"
+      },
+      {
+        "title": "Hotspot ishlamayapti",
+        "icon_emoji": "🔥",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc08.ustamakon_doc"
+      },
+      {
+        "title": "Bluetooth ishlamayapti",
+        "icon_emoji": "🔵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc09.ustamakon_doc"
+      },
+      {
+        "title": "Quloqchinda ovoz eshitilmayapti",
+        "icon_emoji": "🎧",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc10.ustamakon_doc"
+      },
+      {
+        "title": "Ekran negativ ko’rinyapti nima qilay?",
+        "icon_emoji": "⚫",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc11.ustamakon_doc"
+      },
+      {
+        "title": "Kamera ishlamayapti",
+        "icon_emoji": "📷",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc12.ustamakon_doc"
+      },
+      {
+        "title": "Hozirgi Dastur 'Не отвечает' bo'lib qoldi, nima qilay?",
+        "icon_emoji": "⏳",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc13.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter qizib ketdi",
+        "icon_emoji": "🥵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc14.ustamakon_doc"
+      },
+      {
+        "title": "TouchPad ishlamayapti",
+        "icon_emoji": "👆",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc15.ustamakon_doc"
+      },
+      {
+        "title": "Drayverlar qanday yangilanadi?",
+        "icon_emoji": "🔄",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc16.ustamakon_doc"
+      },
+      {
+        "title": "Sichqoncha juda tez / juda sekin ishlayapti",
+        "icon_emoji": "🐭",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc17.ustamakon_doc"
+      },
+      {
+        "title": "Ekran masshtabi qanday o’zgartiriladi?",
+        "icon_emoji": "📏",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc18.ustamakon_doc"
+      },
+      {
+        "title": "Batareya tez tugayapti",
+        "icon_emoji": "🔋",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc19.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter yoqilganda Dasturlar o’zi ochilib ketypati",
+        "icon_emoji": "🚀",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc20.ustamakon_doc"
+      },
+      {
+        "title": "Kesh fayllarni qanday tozalash mumkin?",
+        "icon_emoji": "🧹",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc21.ustamakon_doc"
+      },
+      {
+        "title": "Keraksiz hususiyatlarni o’chirib qo’ymoqchiman.",
+        "icon_emoji": "🚫",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc22.ustamakon_doc"
+      },
+      {
+        "title": "BIOS menuga kira olmayapman.",
+        "icon_emoji": "🔒",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc23.ustamakon_doc"
+      },
+      {
+        "title": "BOOT OPTION’(BOOT MENU)ga kira olmayapman.",
+        "icon_emoji": "🔑",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc24.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterim modelini qanday bilaman?",
+        "icon_emoji": "🔍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc25.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterimni tozalab tashlamoqchiman. Zavod.",
+        "icon_emoji": "🗑️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder01/doc26.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Ma'lumotlarni Qayta Tiklash",
+    "icon_emoji": "♻️",
+    "guides": [
+      {
+        "title": "Fleshkadagi ma’lumotlarni yo’qotdim nima qilay?",
+        "icon_emoji": "💾",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder02/doc27.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterimdagi ma’lumotlarni yo’qotdim nima qilay?",
+        "icon_emoji": "💻",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder02/doc28.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Dasturlar va Media",
+    "icon_emoji": "💿",
+    "guides": [
+      {
+        "title": "Menda Ofis dasturlari yo’q ekan? (Word, Excel, PowerPoint)",
+        "icon_emoji": "📄",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc29.ustamakon_doc"
+      },
+      {
+        "title": "Yaxshi musiqa playeri qaysi?",
+        "icon_emoji": "🎵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc30.ustamakon_doc"
+      },
+      {
+        "title": "Yaxshi video playeri qaysi?",
+        "icon_emoji": "▶️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc31.ustamakon_doc"
+      },
+      {
+        "title": "Ekranni qanday video yozish mumkin?",
+        "icon_emoji": "📹",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc32.ustamakon_doc"
+      },
+      {
+        "title": "Skrinshot olsam xotiraga tushmayapti",
+        "icon_emoji": "📸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc33.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterga Play Market qo’ysa bo’ladimi?",
+        "icon_emoji": "🎮",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc34.ustamakon_doc"
+      },
+      {
+        "title": "NOKIA o’yinlarini o’ynamoqchiman.",
+        "icon_emoji": "🐍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc35.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterim Mavzusini o’zgartirmoqchiman.",
+        "icon_emoji": "🎨",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc36.ustamakon_doc"
+      },
+      {
+        "title": "YouTubedan qanday qilib video yuklab olish mumkin?",
+        "icon_emoji": "⬇️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc37.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterda dasturlar do’koni bormi?",
+        "icon_emoji": "🛍️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder03/doc38.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Boshqa",
+    "icon_emoji": "❓",
+    "guides": [
+      {
+        "title": "Kompyuterim kuchsiz, meni ham o’yin o’ynagim keladi.",
+        "icon_emoji": "🎮",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder04/doc39.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter sotib olmoqchiman nimalarga e’tibor beray?",
+        "icon_emoji": "🛒",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder04/doc40.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterchilar meni qanday aldashadi?",
+        "icon_emoji": "😈",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder04/doc41.ustamakon_doc"
+      },
+      {
+        "title": "Antiviruslar men uchun kerakmi o’zi?",
+        "icon_emoji": "🛡️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder04/doc42.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterni boshqa kompyuterdan boshqarish.",
+        "icon_emoji": "🔗",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/usta_makon/master/documents/computer_topics/docfolder04/doc43.ustamakon_doc"
+      }
+    ]
+  }
+]
