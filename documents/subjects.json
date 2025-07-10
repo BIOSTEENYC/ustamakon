@@ -12,7 +12,27 @@
     },
     {
       "name": "--TEZ ORADA-- Android tizimi darslari TelefonKitobi ",
-      "emoji": "📱",
+      "emoji": "📲",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Linux tizimi darslari ",
+      "emoji": "🐥",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- OFFICE DASTURLARI: MS-Office, LibreOffice, GoogleWorkspaces",
+      "emoji": "📝",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Rasm va video tahrirlash darslari",
+      "emoji": "🎞️",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Ijtimoiy tarmoqlardan foydalanish darslari",
+      "emoji": "🕸️",
       "topic_list_url": ""
     }
   ]
