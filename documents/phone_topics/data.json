@@ -1,0 +1,306 @@
+[
+  {
+    "category_name": "Telefon bilan bog'liq muammolar",
+    "icon_emoji": "📱",
+    "guides": [
+      {
+        "title": "Telefon qotib ishlamoqda.",
+        "icon_emoji": "🥶",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/telefon_qotib_ishlamoqda.ustamakon_doc"
+      },
+      {
+        "title": "Xotira to'lib qoldi",
+        "icon_emoji": "💾",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/xotira_tolib_qoldi.ustamakon_doc"
+      },
+      {
+        "title": "Batareya tez tugayapti",
+        "icon_emoji": "🔋",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/batareya_tez_tugayapti.ustamakon_doc"
+      },
+      {
+        "title": "Telefon sekin quvvatlanmoqda",
+        "icon_emoji": "🔌",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/telefon_sekin_quvvatlanyapti.ustamakon_doc"
+      },
+      {
+        "title": "Telefonda reklama chiqmoqa (Zzzz qivordi)",
+        "icon_emoji": "🚫",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/telefonda_reklamani_yoqotish.ustamakon_doc"
+      },
+      {
+        "title": "Telefonim qizib ketdi.",
+        "icon_emoji": "🔥",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/telefonim_qizib_ketdi.ustamakon_doc"
+      },
+      {
+        "title": "Fastboot yozuvi chiqib qoldi. U nima? (Tuzatish usuli).",
+        "icon_emoji": "⚙️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/fastboot_yozuvi_chiqib_qoldi_tuzatish_usuli.ustamakon_doc"
+      },
+      {
+        "title": "Telefonimdagi Hamma narsani o’chirib yubormoqchiman.",
+        "icon_emoji": "🗑️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/telefonimdagi_hamma_narsani_ochirib_yubormoqchiman.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Internet va ulanish muammolari",
+    "icon_emoji": "🌐",
+    "guides": [
+      {
+        "title": "Internet ishlamay qoldi",
+        "icon_emoji": "❌",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_ishlamay_qoldi.ustamakon_doc"
+      },
+      {
+        "title": "Internet sekin ishlamoqda",
+        "icon_emoji": "🐢",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_sekin_ishlamoqda.ustamakon_doc"
+      },
+      {
+        "title": "Internet ko'p sarf bo'lyapti",
+        "icon_emoji": "💸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_kop_sarf_bolyapti.ustamakon_doc"
+      },
+      {
+        "title": "Wi-Figa ulanmoqchiman, ammo wifi ko’rinmayapti.",
+        "icon_emoji": "📶",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/wifiga_ulanmoqchiman_ammo_wifi_korinmayapti.ustamakon_doc"
+      },
+      {
+        "title": "Bluetooth nega kerak?",
+        "icon_emoji": "🔵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/bluetooth_nega_kerak.ustamakon_doc"
+      },
+      {
+        "title": "Telefonda Internet tarqatishni qanday usullari bor?",
+        "icon_emoji": "📡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/telefonda_internet_tarqatishni_qanday_usullari_bor.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Ilovalar va dasturlar",
+    "icon_emoji": "📲",
+    "guides": [
+      {
+        "title": "Instagram ocholmayapman",
+        "icon_emoji": "📸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/instagram_ochish_hisob_yaratish.ustamakon_doc"
+      },
+      {
+        "title": "Instagram hisobimga kira olmayapman",
+        "icon_emoji": "🔐",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/instagram_hisobimga_kira_olmayapman.ustamakon_doc"
+      },
+      {
+        "title": "Instagram hisobimni yo’q qilmoqchiman",
+        "icon_emoji": "👋",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/instagram_hisobni_ochirish.ustamakon_doc"
+      },
+      {
+        "title": "Telegram ochmoqchiman",
+        "icon_emoji": "✈️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/telegram_ochish.ustamakon_doc"
+      },
+      {
+        "title": "Telegramda kod kelmayapti",
+        "icon_emoji": "✉️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/telegramdan_kod_kelmasa.ustamakon_doc"
+      },
+      {
+        "title": "Telegramda hamma narsa ochilib(yuklanib) ketyapti",
+        "icon_emoji": "🔄",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/telegramda_avtoyuklashni_ochirish.ustamakon_doc"
+      },
+      {
+        "title": "Telegram hisobimni o’chirmoqchiman",
+        "icon_emoji": "🗑️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/telegram_hisobini_ochirish.ustamakon_doc"
+      },
+      {
+        "title": "WhatsApp ochmoqchiman",
+        "icon_emoji": "💬",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/whatsapp_hisobi_ochish.ustamakon_doc"
+      },
+      {
+        "title": "WhatsApp yangilash so’ramoqda",
+        "icon_emoji": "⬆️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/whatsapp_yangilash.ustamakon_doc"
+      },
+      {
+        "title": "Ilovalarni play marketsiz o’rnatsa bo’ladimi?",
+        "icon_emoji": "📥",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/play_marketsiz_ilovalar_ornatish.ustamakon_doc"
+      },
+      {
+        "title": "Play Market uchun hisob qanday yaratiladi?",
+        "icon_emoji": "➕",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/play_market_uchun_hisob_qanday_yaratiladi.ustamakon_doc"
+      },
+      {
+        "title": "YouTubedan ekranni o’chirib musiqa eshitmoqchiman",
+        "icon_emoji": "🎵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/youtubedan_ekranni_ochirib_musiqa_eshitmoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "Elektron Kitob va hujjatlarni ocholmayapman",
+        "icon_emoji": "📚",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/hujjatlarni_telefonda_ochish.ustamakon_doc"
+      },
+      {
+        "title": "Chromedan zerikdim. Boshqa zo’r Browser bormi?",
+        "icon_emoji": "🌍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/chromedan_zerikdim_boshqa_zor_browser_bormi.ustamakon_doc"
+      },
+      {
+        "title": "Menda Musiqa ilovasi yo’q",
+        "icon_emoji": "🎶",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/ilovalar_va_dasturlar/menda_musiqa_ilovasi_yoq.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Internet va ulanish muammolari",
+    "icon_emoji": "🌐",
+    "guides": [
+      {
+        "title": "Internet ishlamay qoldi",
+        "icon_emoji": "❌",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_ishlamay_qoldi.ustamakon_doc"
+      },
+      {
+        "title": "Internet sekin ishlamoqda",
+        "icon_emoji": "🐢",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_sekin_ishlamoqda.ustamakon_doc"
+      },
+      {
+        "title": "Internet ko'p sarf bo'lyapti",
+        "icon_emoji": "💸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_kop_sarf_bolyapti.ustamakon_doc"
+      },
+      {
+        "title": "Wi-Figa ulanmoqchiman, ammo wifi ko’rinmayapti.",
+        "icon_emoji": "📶",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/wifiga_ulanmoqchiman_ammo_wifi_korinmayapti.ustamakon_doc"
+      },
+      {
+        "title": "Bluetooth nega kerak?",
+        "icon_emoji": "🔵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/bluetooth_nega_kerak.ustamakon_doc"
+      },
+      {
+        "title": "Telefonda Internet tarqatishni qanday usullari bor?",
+        "icon_emoji": "📡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/telefonda_internet_tarqatishni_qanday_usullari_bor.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Media va fayllar",
+    "icon_emoji": "📁",
+    "guides": [
+      {
+        "title": "Barcha fayllarni SD-Karta(chip)ga o’tkazish",
+        "icon_emoji": "📤",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/chipga_fayl_otkazish.ustamakon_doc"
+      },
+      {
+        "title": "Rasmga olsam Chipga tushishi kerak.",
+        "icon_emoji": "📸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/rasmga_olsam_chipga_tushishi_kerak.ustamakon_doc"
+      },
+      {
+        "title": "Qo’shiqlarda BASS oshirmoqchiman.",
+        "icon_emoji": "🔊",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/qoshiqlarda_bass_oshirmoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "Tiniq ovoz yozmoqchiman.",
+        "icon_emoji": "🎤",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/tiniq_ovoz_yozmoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "Fon rasmini o’zgartirish",
+        "icon_emoji": "🖼️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/fon_rasmini_ozgartirish.ustamakon_doc"
+      },
+      {
+        "title": "Chaqiruvga musiqa, qanday qo’yiladi?",
+        "icon_emoji": "📞",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/media_va_fayllar/chaqiruvga_musiqa_qanday_qoyiladi.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "O'yinlar",
+    "icon_emoji": "🎮",
+    "guides": [
+      {
+        "title": "O’yinlarda qanday qilib tez g’olib bo’lish mumkin?",
+        "icon_emoji": "🏆",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/oyinlar/oyinlarda_tez_golib_bolish.ustamakon_doc"
+      },
+      {
+        "title": "Telefonda PlayStation o’yinlarini o’ynash",
+        "icon_emoji": "🕹️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/oyinlar/telefonda_playstation_oyinlarini_oynash.ustamakon_doc"
+      },
+      {
+        "title": "Telefonda NOKIA o’yinlarini o’ynash.",
+        "icon_emoji": "🐍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/oyinlar/telefonda_nokia_oyinlarini_oynash.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Qurilma xaridi va maslahatlar",
+    "icon_emoji": "🛍️",
+    "guides": [
+      {
+        "title": "Yangi Telefon sotib olyapman, nimaga e’tibor beray?",
+        "icon_emoji": "✨",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/qurilma_xaridi_va_maslahatlar/yangi_telefon_sotib_olyapman_nimaga_etibor_beray.ustamakon_doc"
+      },
+      {
+        "title": "Eski telefon olyapman, nimaga e’tibor beray?",
+        "icon_emoji": "♻️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/qurilma_xaridi_va_maslahatlar/eski_telefon_olyapman_nimaga_etibor_beray.ustamakon_doc"
+      },
+      {
+        "title": "Zaryadchik olyapman qaysini olay?",
+        "icon_emoji": "⚡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/qurilma_xaridi_va_maslahatlar/zaryadchik_olyapman_qaysini_olay.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Xavfsizlik va kontent",
+    "icon_emoji": "🔒",
+    "guides": [
+      {
+        "title": "Negadir Telefonimga Behayo kontentlar yuklanib qolmoqda😢.",
+        "icon_emoji": "🔞",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/xavfsizlik_va_kontent/negadir_telefonimga_behayo_narsalar_kelib_qolyapti.ustamakon_doc"
+      },
+      {
+        "title": "Har qanday ilova yoki sayt parollarni tiklash",
+        "icon_emoji": "🔑",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/xavfsizlik_va_kontent/har_qanday_ilova_yoki_sayt_parollarni_tiklash.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Boshqa",
+    "icon_emoji": "❓",
+    "guides": [
+      {
+        "title": "Matnlar kichiklik/kattalik qilmoqda.",
+        "icon_emoji": "📏",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/telefon_bilan_bogliq_muammolar/matnlarni_katta_kichik_qilish.ustamakon_doc"
+      }
+    ]
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "category_name": "Windows O'rnatish va Aktivatsiya",
+    "icon_emoji": "💾",
+    "guides": [
+      {
+        "title": "Windows aktivatsiya qilish",
+        "icon_emoji": "🔑",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/windows_aktivatsiya_qilish.ustamakon_doc"
+      },
+      {
+        "title": "Windows 11 o’rnatish",
+        "icon_emoji": "🖥️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/windows_11_ornatish.ustamakon_doc"
+      },
+      {
+        "title": "Windows 10 o’rnatish",
+        "icon_emoji": "💻",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/windows_10_ornatish.ustamakon_doc"
+      },
+      {
+        "title": "Windowsni kompyuterga emas, Fleshkaga o’rnatsa bo’ladimi?",
+        "icon_emoji": "💽",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/windowsni_kompyuterga_emas_fleshkaga_ornatsa_boladimi.ustamakon_doc"
+      },
+      {
+        "title": "Windows menga yoqmaydi boshqa tizimlar bormi?",
+        "icon_emoji": "🐧",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/windows_menga_yoqmaydi_boshqa_tizimlar_bormi.ustamakon_doc"
+      },
+      {
+        "title": "Tezkor Windows MODlari bormi?",
+        "icon_emoji": "⚡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/windows_ornatish_va_aktivatsiya/tezkor_windows_modlari_bormi.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Kompyuter Sozlamalari va Muammolar",
+    "icon_emoji": "⚙️",
+    "guides": [
+      {
+        "title": "Xotira to’lib qoldi",
+        "icon_emoji": "🗃️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/xotira_tolib_qoldi.ustamakon_doc"
+      },
+      {
+        "title": "Wi-FI ishlamayapti",
+        "icon_emoji": "📡",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/wi_fi_ishlamayapti.ustamakon_doc"
+      },
+      {
+        "title": "Hotspot ishlamayapti",
+        "icon_emoji": "🔥",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/hotspot_ishlamayapti.ustamakon_doc"
+      },
+      {
+        "title": "Bluetooth ishlamayapti",
+        "icon_emoji": "🔵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/bluetooth_ishlamayapti.ustamakon_doc"
+      },
+      {
+        "title": "Quloqchinda ovoz eshitilmayapti",
+        "icon_emoji": "🎧",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/quloqchinda_ovoz_eshitilmayapti.ustamakon_doc"
+      },
+      {
+        "title": "Ekran negativ ko’rinyapti nima qilay?",
+        "icon_emoji": "⚫",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/ekran_negativ_korinyapti_nima_qilay.ustamakon_doc"
+      },
+      {
+        "title": "Kamera ishlamayapti",
+        "icon_emoji": "📷",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kamera_ishlamayapti.ustamakon_doc"
+      },
+      {
+        "title": "Hozirgi Dastur 'Не отвечает' bo'lib qoldi, nima qilay?",
+        "icon_emoji": "⏳",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/hozirgi_dastur_ne_otvechayet_bolib_qoldi_nima_qilay.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter qizib ketdi",
+        "icon_emoji": "🥵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kompyuter_qizib_ketdi.ustamakon_doc"
+      },
+      {
+        "title": "TouchPad ishlamayapti",
+        "icon_emoji": "👆",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/touchpad_ishlamayapti.ustamakon_doc"
+      },
+      {
+        "title": "Drayverlar qanday yangilanadi?",
+        "icon_emoji": "🔄",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/drayverlar_qanday_yangilanadi.ustamakon_doc"
+      },
+      {
+        "title": "Sichqoncha juda tez / juda sekin ishlayapti",
+        "icon_emoji": "🐭",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/sichqoncha_juda_tez_juda_sekin_ishlayapti.ustamakon_doc"
+      },
+      {
+        "title": "Ekran masshtabi qanday o’zgartiriladi?",
+        "icon_emoji": "📏",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/ekran_masshtabi_qanday_o’zgartiriladi.ustamakon_doc"
+      },
+      {
+        "title": "Batareya tez tugayapti",
+        "icon_emoji": "🔋",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/batareya_tez_tugayapti.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter yoqilganda Dasturlar o’zi ochilib ketypati",
+        "icon_emoji": "🚀",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kompyuter_yoqilganda_dasturlar_ozi_ochilib_ketypati.ustamakon_doc"
+      },
+      {
+        "title": "Kesh fayllarni qanday tozalash mumkin?",
+        "icon_emoji": "🧹",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kesh_fayllarni_qanday_tozalash_mumkin.ustamakon_doc"
+      },
+      {
+        "title": "Keraksiz hususiyatlarni o’chirib qo’ymoqchiman.",
+        "icon_emoji": "🚫",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/keraksiz_hususiyatlarni_ochirib_qoymoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "BIOS menuga kira olmayapman.",
+        "icon_emoji": "🔒",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/bios_menuga_kira_olmayapman.ustamakon_doc"
+      },
+      {
+        "title": "BOOT OPTION’(BOOT MENU)ga kira olmayapman.",
+        "icon_emoji": "🔑",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/boot_option_boot_menuga_kira_olmayapman.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterim modelini qanday bilaman?",
+        "icon_emoji": "🔍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kompyuterim_modelini_qanday_bilaman.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterimni tozalab tashlamoqchiman. Zavod.",
+        "icon_emoji": "🗑️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/kompyuter_sozlamalari_va_muammolar/kompyuterimni_tozalab_tashlamoqchiman_zavod.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Ma'lumotlarni Qayta Tiklash",
+    "icon_emoji": "♻️",
+    "guides": [
+      {
+        "title": "Fleshkadagi ma’lumotlarni yo’qotdim nima qilay?",
+        "icon_emoji": "💾",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/malumotlarni_qayta_tiklash/fleshkadagi_malumotlarni_yoqotdim_nima_qilay.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterimdagi ma’lumotlarni yo’qotdim nima qilay?",
+        "icon_emoji": "💻",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/malumotlarni_qayta_tiklash/kompyuterimdagi_malumotlarni_yoqotdim_nima_qilay.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Dasturlar va Media",
+    "icon_emoji": "💿",
+    "guides": [
+      {
+        "title": "Menda Ofis dasturlari yo’q ekan? (Word, Excel, PowerPoint)",
+        "icon_emoji": "📄",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/menda_ofis_dasturlari_yoq_ekan_word_excel_powerpoint.ustamakon_doc"
+      },
+      {
+        "title": "Yaxshi musiqa playeri qaysi?",
+        "icon_emoji": "🎵",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/yaxshi_musiqa_playeri_qaysi.ustamakon_doc"
+      },
+      {
+        "title": "Yaxshi video playeri qaysi?",
+        "icon_emoji": "▶️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/yaxshi_video_playeri_qaysi.ustamakon_doc"
+      },
+      {
+        "title": "Ekranni qanday video yozish mumkin?",
+        "icon_emoji": "📹",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/ekranni_qanday_video_yozish_mumkin.ustamakon_doc"
+      },
+      {
+        "title": "Skrinshot olsam xotiraga tushmayapti",
+        "icon_emoji": "📸",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/skrinshot_olsam_xotiraga_tushmayapti.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterga Play Market qo’ysa bo’ladimi?",
+        "icon_emoji": "🎮",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/kompyuterga_playmarket_qoysa_boladimi.ustamakon_doc"
+      },
+      {
+        "title": "NOKIA o’yinlarini o’ynamoqchiman.",
+        "icon_emoji": "🐍",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/kompyuterda_nokia_oyinlarini_oynamoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterim Mavzusini o’zgartirmoqchiman.",
+        "icon_emoji": "🎨",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/kompyuterim_mavzusini_ozgartirmoqchiman.ustamakon_doc"
+      },
+      {
+        "title": "YouTubedan qanday qilib video yuklab olish mumkin?",
+        "icon_emoji": "⬇️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/youtubedan_qanday_qilib_video_yuklab_olish_mumkin.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterda dasturlar do’koni bormi?",
+        "icon_emoji": "🛍️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/dasturlar_va_media/kompyuterda_dasturlar_dokoni_bormi.ustamakon_doc"
+      }
+    ]
+  },
+  {
+    "category_name": "Boshqa",
+    "icon_emoji": "❓",
+    "guides": [
+      {
+        "title": "Kompyuterim kuchsiz, meni ham o’yin o’ynagim keladi.",
+        "icon_emoji": "🎮",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/boshqa/kompyuterim_kuchsiz_meni ham_oyin_oynagim_keladi.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuter sotib olmoqchiman nimalarga e’tibor beray?",
+        "icon_emoji": "🛒",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/boshqa/kompyuter_sotib_olmoqchiman_nimalarga_etibor_beray.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterchilar meni qanday aldashadi?",
+        "icon_emoji": "😈",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/boshqa/kompyuterchilar_meni_qanday_aldashadi.ustamakon_doc"
+      },
+      {
+        "title": "Antiviruslar men uchun kerakmi o’zi?",
+        "icon_emoji": "🛡️",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/boshqa/antiviruslar_men_uchun_kerakmi_ozi.ustamakon_doc"
+      },
+      {
+        "title": "Kompyuterni boshqa kompyuterdan boshqarish.",
+        "icon_emoji": "🔗",
+        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/computer_topics/boshqa/kompyuterni_boshqa_kompyuterdan_boshqarish.ustamakon_doc"
+      }
+    ]
+  }
+]
