@@ -9,6 +9,31 @@
       "name": "Telefon muammolarini hal etish: Telefon Akademiyasi",
       "emoji": "📱",
       "topic_list_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/data.json"
+    },
+    {
+      "name": "--TEZ ORADA-- Android tizimi darslari TelefonKitobi ",
+      "emoji": "📲",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Linux tizimi darslari ",
+      "emoji": "🐥",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- OFFICE DASTURLARI: MS-Office, LibreOffice, GoogleWorkspaces",
+      "emoji": "📝",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Rasm va video tahrirlash darslari",
+      "emoji": "🎞️",
+      "topic_list_url": ""
+    },
+    {
+      "name": "--TEZ ORADA-- Ijtimoiy tarmoqlardan foydalanish darslari",
+      "emoji": "🕸️",
+      "topic_list_url": ""
     }
   ]
 }
