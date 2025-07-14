@@ -18,5 +18,5 @@
 ---
 
 ### 👨‍💻 Motivatsiya va Ilhom bering:
-Dasturlash rivoji uchun 
+[▶️ Dasturlash rivoji uchun]
 ![IlhomKartasi](./karta.png)
