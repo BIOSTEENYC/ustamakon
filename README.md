@@ -14,3 +14,9 @@
 
 ### 🖥️ Windows ilovasi:
 [💾 Windows .exe faylni yuklab olish](https://github.com/BIOSTEENYC/ustamakon/releases/download/windows_app/UstaMakon.exe)
+
+---
+
+###Motivatsiya va Ilhom bering
+Dasturlash rivoji uchun 
+![IlhomKartasi](./karta.png)
