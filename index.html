@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UstaMakon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Yangi gradient fon */
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Osmonsimon gradient */
+            align-items: center; /* Kontentni markazga joylash */
+            justify-content: center; /* Kontentni markazga joylash */
+        }
+        #app-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 1rem;
+            /* Shaffof shishasimon blur effekti */
+            background-color: rgba(255, 255, 255, 0.15); /* Yarim shaffof oq */
+            backdrop-filter: blur(10px); /* Blur effekti */
+            border-radius: 20px; /* Shisha effekti uchun yumaloq burchaklar */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Yengil chegara */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Nozik soya */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .header {
+            background-color: rgba(17, 67, 144, 0.8); /* Biroz shaffof ko'k */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); /* Kartalar uchun yarim shaffof oq */
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            text-align: center;
+            min-height: 180px; /* Karta minimal balandligi */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background-color: rgba(229, 231, 235, 0.6); /* O'chirilgan holat uchun ochroq kulrang */
+        }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-subtitle {
+            font-size: 0.875rem;
+            color: #6b7280; /* kulrang-500 */
+        }
+        .grid-container {
+            display: grid;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        @media (min-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (min-width: 1200px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .list-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Yarim shaffof oq */
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .list-card:hover {
+            transform: translateY(-3px);
+        }
+        .list-card.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background-color: rgba(229, 231, 235, 0.6); /* O'chirilgan holat uchun ochroq kulrang */
+        }
+        .list-card-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        .list-card-content {
+            flex-grow: 1;
+        }
+        .list-card-title {
+            font-weight: bold;
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+        .list-card-subtitle {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #114390;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .progress-bar-container {
+            width: 80%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 8px;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #114390;
+            width: 0%;
+            border-radius: 5px;
+            transition: width 0.3s ease-in-out;
+        }
+        .full-screen-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            text-align: center;
+            color: #333; /* Matn rangini o'zgartirish */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Yarim shaffof fon */
+            border-radius: 12px;
+            margin: 20px;
+        }
+        .full-screen-message .icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            color: #114390; /* Belgilar rangini o'zgartirish */
+        }
+        .full-screen-message h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .full-screen-message p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .snackbar {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .snackbar.show {
+            opacity: 1;
+        }
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #114390;
+            color: white;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 900;
+        }
+        .fab i {
+            font-size: 1.5rem;
+        }
+
+        /* PDF Viewer specific styles */
+        #pdf-viewer-container {
+            width: 100%;
+            height: calc(100vh - 64px); /* AppBar balandligini hisobga olgan holda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent; /* Fonni shaffof qilish */
+        }
+        #pdf-canvas {
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            max-width: 100%; /* Ensure it doesn't overflow horizontally */
+            height: auto; /* Maintain aspect ratio */
+            background-color: white; /* Canvas foni oq bo'lsin */
+            display: block; /* Remove extra space below canvas */
+        }
+        .pdf-controls {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Yarim shaffof fon */
+            border-top: 1px solid #eee;
+            gap: 10px;
+            flex-wrap: wrap;
+            border-radius: 0 0 12px 12px; /* Pastki qismni yumaloqlash */
+        }
+        .pdf-controls button {
+            background-color: #114390;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        .pdf-controls button:hover {
+            background-color: #0e377a;
+        }
+        .pdf-controls span {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Onboarding styles */
+        .onboarding-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+            text-align: center;
+            flex-grow: 1;
+            color: #333; /* Matn rangini o'zgartirish */
+            background-color: rgba(255, 255, 255, 0.7); /* Yarim shaffof fon */
+            border-radius: 12px;
+            margin: 1rem;
+        }
+        .onboarding-page i {
+            font-size: 7.5rem;
+            margin-bottom: 2.5rem;
+            color: #114390; /* Belgilar rangini o'zgartirish */
+        }
+        .onboarding-page h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.25rem;
+            color: #333;
+        }
+        .onboarding-page p {
+            font-size: 1.125rem;
+            color: #333;
+        }
+        .onboarding-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .onboarding-dot {
+            width: 0.625rem;
+            height: 0.625rem;
+            border-radius: 50%;
+            background-color: #9ca3af; /* Kulrang nuqta */
+            margin: 0 0.3125rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .onboarding-dot.active {
+            width: 1.875rem;
+            border-radius: 0.3125rem;
+            background-color: #114390; /* Faol nuqta rangi */
+        }
+        .onboarding-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.3); /* Yengilroq footer */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .onboarding-footer button {
+            background-color: #114390;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+        .onboarding-footer button:hover {
+            background-color: #0e377a;
+        }
+
+        .about-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            text-align: center;
+            color: #333; /* Matn rangini o'zgartirish */
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.7); /* Yarim shaffof fon */
+            border-radius: 12px;
+            margin: 1rem;
+        }
+        .about-screen .icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            color: #114390; /* Belgilar rangini o'zgartirish */
+        }
+        .about-screen h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .about-screen p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .about-screen .contact-info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #333;
+        }
+        .about-screen .contact-info-item i {
+            font-size: 1.25rem;
+            margin-right: 0.75rem;
+            color: #114390;
+        }
+        .about-screen .contact-info-item a {
+            color: #114390;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .about-screen .contact-info-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Splash screen specific styles - no translucent background */
+        .splash-screen-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 5rem 1rem; /* Paddingni oshirish */
+            text-align: center;
+            color: white; /* Matn rangini oq qilish */
+        }
+        .splash-screen-content .loading-spinner {
+            border-top-color: white; /* Spinner rangini oq qilish */
+        }
+        .splash-screen-content #splash-status {
+            color: white; /* Matn rangini oq qilish */
+        }
+        .splash-screen-content #splash-error {
+            color: #fca5a5; /* Xato matn rangini och qizil qilish */
+        }
+
+        /* Download Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.95); /* Yarim shaffof oq */
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .modal-overlay.show .modal-content {
+            transform: translateY(0);
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+        .download-option-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #114390;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .download-option-btn:hover {
+            background-color: #0e377a;
+            transform: translateY(-2px);
+        }
+        .download-option-btn i {
+            margin-right: 0.75rem;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container"></div>
+
+    <!-- PDF.js kutubxonasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script>
+        // PDF.js worker URL
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+        // Obfuskatsiya kaliti (Dart kodidan olingan)
+        const _obfuscationKey = 0x5A;
+
+        // Baytlarni XOR operatsiyasi bilan obfuskatsiya qilish (Dart kodidan olingan)
+        function _xorBytes(bytes) {
+            const result = new Uint8Array(bytes.length);
+            for (let i = 0; i < bytes.length; i++) {
+                result[i] = bytes[i] ^ _obfuscationKey;
+            }
+            return result;
+        }
+
+        // Responsive o'lchamlar uchun yordamchi funksiya (Flutterdagi responsiveSize ga o'xshash)
+        function responsiveSize(baseSize) {
+            const shortestSide = Math.min(window.innerWidth, window.innerHeight);
+            const baseShortestSide = 360.0; // Flutterdagi qiymat
+            return baseSize * (shortestSide / baseShortestSide);
+        }
+
+        function responsiveTextSize(baseFontSize) {
+            const shortestSide = Math.min(window.innerWidth, window.innerHeight);
+            const baseShortestSide = 360.0;
+            return baseFontSize * Math.max(0.8, Math.min(1.5, (shortestSide / baseShortestSide)));
+        }
+
+        // Ma'lumotlarni saqlash uchun localStorage dan foydalanish
+        const HIVE_SUBJECTS_BOX_NAME = 'subjectsBox';
+        const HIVE_SETTINGS_BOX_NAME = 'settingsBox';
+        const ONBOARDING_DONE_KEY = 'onboardingDone';
+        // LAST_SUCCESSFUL_PRELOAD_KEY va OFFLINE_MODE_KEY olib tashlandi
+
+        // MD5 hash funksiyasi (CryptoJS dan foydalaniladi)
+        // CryptoJS CDN
+        const loadScript = (src) => {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        };
+
+        let CryptoJS; // CryptoJS ni global scope da e'lon qilish
+
+        async function initCryptoJS() {
+            if (!window.CryptoJS) {
+                await loadScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js');
+                CryptoJS = window.CryptoJS;
+            } else {
+                CryptoJS = window.CryptoJS;
+            }
+        }
+
+        function generateMd5(str) {
+            if (!CryptoJS) {
+                console.error("CryptoJS yuklanmagan!");
+                return btoa(str).replace(/=/g, ''); // Fallback to base64
+            }
+            return CryptoJS.MD5(str).toString();
+        }
+
+        // --- Data Models (Dartdagi HiveType ga o'xshash) ---
+        class Subject {
+            constructor({ id, name, iconUrl, topicListUrl, categories = [], emoji = '' }) {
+                this.id = id;
+                this.name = name;
+                this.iconUrl = iconUrl;
+                this.topicListUrl = topicListUrl;
+                this.categories = categories.map(cat => new Category(cat));
+                this.emoji = emoji;
+            }
+
+            static fromJson(json) {
+                const name = json.name ?? 'Noma\'lum Fan';
+                const id = json.id ?? generateMd5(name + (json.topic_list_url ?? ''));
+                return new Subject({
+                    id: id,
+                    name: name,
+                    iconUrl: json.icon_url ?? '',
+                    topicListUrl: json.topic_list_url ?? '',
+                    emoji: json.emoji ?? '',
+                    categories: [], // Kategoriyalar keyinroq yuklanadi
+                });
+            }
+
+            toJson() {
+                return {
+                    id: this.id,
+                    name: this.name,
+                    iconUrl: this.iconUrl,
+                    topicListUrl: this.topicListUrl,
+                    categories: this.categories.map(cat => cat.toJson()),
+                    emoji: this.emoji,
+                };
+            }
+        }
+
+        class Category {
+            constructor({ id, name, iconEmoji, guides = [] }) {
+                this.id = id;
+                this.name = name;
+                this.iconEmoji = iconEmoji;
+                this.guides = guides.map(guide => new Guide(guide));
+            }
+
+            static fromJson(json) {
+                const categoryName = json.category_name ?? 'Noma\'lum Kategoriya';
+                const icon = json.icon_emoji ?? '❓';
+                return new Category({
+                    id: generateMd5(categoryName),
+                    name: categoryName,
+                    iconEmoji: icon,
+                    guides: (json.guides || []).map(guideJson => Guide.fromJson(guideJson)),
+                });
+            }
+
+            toJson() {
+                return {
+                    id: this.id,
+                    name: this.name,
+                    iconEmoji: this.iconEmoji,
+                    guides: this.guides.map(guide => guide.toJson()),
+                };
+            }
+        }
+
+        class Guide {
+            constructor({ id, title, iconEmoji, documentUrl }) {
+                this.id = id;
+                this.title = title;
+                this.iconEmoji = iconEmoji;
+                this.documentUrl = documentUrl;
+            }
+
+            static fromJson(json) {
+                const guideTitle = json.title ?? 'Noma\'lum Mavzu';
+                const icon = json.icon_emoji ?? ' ';
+                const docUrl = json.document_url ?? '';
+                return new Guide({
+                    id: generateMd5(guideTitle + docUrl),
+                    title: guideTitle,
+                    iconEmoji: icon,
+                    documentUrl: docUrl,
+                });
+            }
+
+            toJson() {
+                return {
+                    id: this.id,
+                    title: this.title,
+                    iconEmoji: this.iconEmoji,
+                    documentUrl: this.documentUrl,
+                };
+            }
+        }
+
+        // --- Data Service ---
+        class DataService {
+            constructor() {
+                this._subjectsBox = JSON.parse(localStorage.getItem(HIVE_SUBJECTS_BOX_NAME) || '{}');
+                this._subjectsJsonUrl = 'https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/subjects.json';
+            }
+
+            async fetchSubjects({ forceRefresh = false } = {}) {
+                let subjectsFromNetwork = [];
+                try {
+                    console.log('DataService: Fanlar internetdan yuklanmoqda:', this._subjectsJsonUrl);
+                    const response = await fetch(this._subjectsJsonUrl);
+                    if (!response.ok) {
+                        throw new Error(`DataService: Fanlarni yuklashda xatolik (${response.status}): ${response.statusText}`);
+                    }
+                    const decodedBody = await response.text();
+                    const decodedJson = JSON.parse(decodedBody);
+                    console.log('DataService: subjects.json fayli yuklandi:', decodedJson);
+
+
+                    if (decodedJson && decodedJson.subjects && Array.isArray(decodedJson.subjects)) {
+                        for (const data of decodedJson.subjects) {
+                            if (typeof data === 'object' && data !== null) {
+                                const subject = Subject.fromJson(data);
+                                // Keshda mavjud bo'lsa, kategoriyalarni yangilash
+                                const existingSubjectData = this._subjectsBox[subject.id];
+                                if (existingSubjectData) {
+                                    const existingSubject = new Subject(existingSubjectData);
+                                    subject.categories = existingSubject.categories;
+                                }
+                                if (subject.topicListUrl && subject.categories.length === 0) {
+                                    subject.categories = await this.fetchCategoriesForSubject(subject, { forceRefresh: true });
+                                }
+                                subjectsFromNetwork.push(subject);
+                            } else {
+                                throw new Error(`DataService: Subject ma'lumoti kutilgan Map formatida emas: ${data}`);
+                            }
+                        }
+
+                        // localStorage ni yangilash
+                        this._subjectsBox = {};
+                        for (const subject of subjectsFromNetwork) {
+                            this._subjectsBox[subject.id] = subject.toJson();
+                        }
+                        localStorage.setItem(HIVE_SUBJECTS_BOX_NAME, JSON.stringify(this._subjectsBox));
+
+                        console.log(`DataService: Fanlar internetdan yuklandi va localStorage ga saqlandi (count: ${subjectsFromNetwork.length})`);
+                        return subjectsFromNetwork;
+                    } else {
+                        throw new Error('DataService: Kutilmagan JSON formati subjects.json uchun. Javob Map emas yoki "subjects" kaliti yo\'q.');
+                    }
+                } catch (e) {
+                    console.error('DataService: Fanlarni yuklashda xatolik:', e);
+                    const cachedSubjectsData = Object.values(this._subjectsBox);
+                    if (cachedSubjectsData.length > 0) {
+                        console.log('DataService: Xatolik yuz berdi, localStorage dagi eski fanlar qaytarildi.');
+                        return cachedSubjectsData.map(s => new Subject(s));
+                    }
+                    throw new Error(`DataService: Fanlar yuklanmadi va keshda ham mavjud emas. Xatolik: ${e.message}`);
+                }
+            }
+
+            async fetchCategoriesForSubject(subject, { forceRefresh = false } = {}) {
+                if (!subject.topicListUrl) {
+                    console.warn(`DataService: "${subject.name}" uchun topicListUrl bo'sh. Kategoriyalar yuklanmaydi.`);
+                    return [];
+                }
+
+                if (!forceRefresh && subject.categories.length > 0) {
+                    console.log(`DataService: "${subject.name}" uchun kategoriyalar localStorage (Subject ichidan) dan olindi.`);
+                    return subject.categories;
+                }
+
+                try {
+                    console.log(`DataService: "${subject.name}" uchun kategoriyalar internetdan yuklanmoqda: ${subject.topicListUrl}`);
+                    const response = await fetch(subject.topicListUrl);
+                    if (!response.ok) {
+                        throw new Error(`DataService: Kategoriyalarni yuklashda xatolik (${response.status}): ${response.statusText} URL: ${subject.topicListUrl}`);
+                    }
+                    const decodedData = await response.json();
+                    console.log(`DataService: "${subject.name}" uchun kategoriya JSON yuklandi:`, decodedData);
+
+                    const categories = decodedData.map(data => {
+                        if (typeof data === 'object' && data !== null) {
+                            return Category.fromJson(data);
+                        } else {
+                            throw new Error(`DataService: Category ma'lumoti kutilgan Map formatida emas: ${data}`);
+                        }
+                    });
+
+                    console.log(`DataService: "${subject.name}" uchun kategoriyalar internetdan yuklandi (count: ${categories.length})`);
+                    subject.categories = categories;
+                    // Subjectni localStorage da yangilash
+                    this._subjectsBox[subject.id] = subject.toJson();
+                    localStorage.setItem(HIVE_SUBJECTS_BOX_NAME, JSON.stringify(this._subjectsBox));
+                    return categories;
+                } catch (e) {
+                    console.error(`DataService: Kategoriyalarni yuklashda xatolik ("${subject.name}"):`, e);
+                    if (subject.categories.length > 0) {
+                        console.log(`DataService: Xatolik yuz berdi, "${subject.name}" uchun localStorage dagi eski kategoriyalar qaytarildi.`);
+                        return subject.categories;
+                    }
+                    return [];
+                }
+            }
+        }
+
+        // --- PDF Service ---
+        class PdfService {
+            constructor() {
+                // this._pdfBox olib tashlandi
+            }
+
+            _generateKey(url) {
+                return generateMd5(url);
+            }
+
+            async loadPdfBytes(url) {
+                if (!url) {
+                    console.log('PdfService: PDF URL bo\'sh, yuklash bekor qilindi.');
+                    return null;
+                }
+
+                try {
+                    console.log(`PdfService: PDF (obfuskatsiya qilingan) internetdan yuklanmoqda: ${url}`);
+                    const response = await fetch(url);
+
+                    if (!response.ok) {
+                        throw new Error(`PdfService: PDF yuklashda xatolik (${response.status}): ${response.statusText} URL: ${url}`);
+                    }
+                    const obfuscatedBytesFromServer = new Uint8Array(await response.arrayBuffer());
+
+                    if (obfuscatedBytesFromServer.length === 0) {
+                        console.log(`PdfService: PDF internetdan bo'sh baytlar bilan keldi: ${url}`);
+                        throw new Error('Serverdan bo\'sh PDF fayl keldi.');
+                    }
+
+                    console.log(`PdfService: PDF (obfuskatsiya qilingan) internetdan yuklandi: ${url}. Baytlar soni: ${obfuscatedBytesFromServer.length}`);
+                    return _xorBytes(obfuscatedBytesFromServer);
+                } catch (e) {
+                    console.error(`PdfService: PDF yuklashda xatolik (${url}):`, e);
+                    return null;
+                }
+            }
+        }
+
+        // --- Preload Manager ---
+        class PreloadManager {
+            constructor() {
+                this.progress = 0.0;
+                this.status = "Tayyorlanmoqda...";
+                this.error = null;
+                this.listeners = []; // UI ni yangilash uchun tinglovchilar
+            }
+
+            _notifyListeners() {
+                this.listeners.forEach(callback => callback());
+            }
+
+            addListener(callback) {
+                this.listeners.push(callback);
+            }
+
+            removeListener(callback) {
+                this.listeners = this.listeners.filter(cb => cb !== callback);
+            }
+
+            async preloadAllData() { // forceRefresh parametri olib tashlandi
+                try {
+                    this.error = null;
+                    this.status = "Fanlar ro'yxati yuklanmoqda...";
+                    this.progress = 0.05;
+                    this._notifyListeners();
+
+                    const dataService = new DataService();
+                    const settingsBox = JSON.parse(localStorage.getItem(HIVE_SETTINGS_BOX_NAME) || '{}');
+
+                    await new Promise(resolve => setTimeout(resolve, 100));
+
+                    let subjects = [];
+                    // Har doim internetdan yuklashga urinish
+                    subjects = await dataService.fetchSubjects({ forceRefresh: true }); // Har doim majburiy yangilash
+
+                    if (subjects.length === 0) {
+                        throw new Error("Fanlar topilmadi. Internet aloqasini tekshiring yoki keyinroq urinib ko'ring.");
+                    }
+                    this.status = "Fanlar yuklandi. Kategoriyalar tekshirilmoqda...";
+                    this._notifyListeners();
+
+                    // Kategoriyalarni yuklash
+                    for (let i = 0; i < subjects.length; i++) {
+                        const subject = subjects[i];
+                        if (subject.topicListUrl && subject.categories.length === 0) {
+                            this.status = `'${subject.name}' uchun kategoriyalar yuklanmoqda...`;
+                            this._notifyListeners();
+                            subject.categories = await dataService.fetchCategoriesForSubject(subject, { forceRefresh: true }); // Har doim majburiy yangilash
+                            // Subjectni localStorage da yangilash
+                            const subjectsData = JSON.parse(localStorage.getItem(HIVE_SUBJECTS_BOX_NAME) || '{}');
+                            subjectsData[subject.id] = subject.toJson();
+                            localStorage.setItem(HIVE_SUBJECTS_BOX_NAME, JSON.stringify(subjectsData));
+                        }
+                        this.progress = 0.35 + (0.60 * ((i + 1) / subjects.length)); // Progressni 0.95 gacha olib borish
+                        this._notifyListeners();
+                    }
+
+                    this.progress = 1.0;
+                    this.status = "Barcha ma'lumotlar yuklandi!";
+                    this._notifyListeners();
+                    // LAST_SUCCESSFUL_PRELOAD_KEY olib tashlandi
+                } catch (e) {
+                    console.error("PreloadManager: Ma'lumotlarni oldindan yuklashda xatolik:", e);
+                    this.error = `Xatolik: \n${e.message}\nIltimos, internet aloqangizni tekshiring va qayta urinib ko'ring.`;
+                    this.progress = 0.0;
+                    this._notifyListeners();
+                }
+            }
+        }
+
+        const preloadManager = new PreloadManager();
+        const dataService = new DataService();
+        const pdfService = new PdfService();
+
+        // --- Router va UI Render funksiyalari ---
+        const appContainer = document.getElementById('app-container');
+        let currentScreen = '';
+        let currentParams = {};
+        let historyStack = []; // Maxsus tarix staki
+
+        function showSnackbar(message, isError = false) {
+            let snackbar = document.getElementById('snackbar');
+            if (!snackbar) {
+                snackbar = document.createElement('div');
+                snackbar.id = 'snackbar';
+                snackbar.className = 'snackbar';
+                document.body.appendChild(snackbar);
+            }
+            snackbar.textContent = message;
+            snackbar.style.backgroundColor = isError ? '#dc2626' : '#333';
+            snackbar.classList.add('show');
+            setTimeout(() => {
+                snackbar.classList.remove('show');
+            }, 3000);
+        }
+
+        function navigateTo(screen, params = {}) {
+            // Joriy holatni tarixga saqlash
+            if (currentScreen !== '') {
+                historyStack.push({ screen: currentScreen, params: currentParams });
+            }
+            currentScreen = screen;
+            currentParams = params;
+            renderApp();
+        }
+
+        function navigateBack() {
+            if (historyStack.length > 0) {
+                const prevState = historyStack.pop();
+                currentScreen = prevState.screen;
+                currentParams = prevState.params;
+                renderApp();
+            } else {
+                // Agar tarix bo'sh bo'lsa, asosiy ekranga qaytish
+                navigateTo('main');
+            }
+        }
+
+        function renderApp() {
+            appContainer.innerHTML = ''; // Kontentni tozalash
+
+            // FAB tugmasini yaratish/yangilash
+            let fab = document.getElementById('fab');
+            if (!fab) {
+                fab = document.createElement('div');
+                fab.id = 'fab';
+                fab.className = 'fab';
+                fab.innerHTML = '<i class="fas fa-info-circle"></i>';
+                fab.onclick = () => navigateTo('about');
+                document.body.appendChild(fab);
+            }
+
+            let content;
+            switch (currentScreen) {
+                case 'onboarding':
+                    content = createOnboardingScreen();
+                    break;
+                case 'splash':
+                    content = createSplashScreen();
+                    break;
+                case 'error':
+                    content = createErrorScreen();
+                    break;
+                case 'main':
+                    content = createMainAppScreen();
+                    break;
+                case 'categories':
+                    content = createCategoryListScreen(currentParams.subject);
+                    break;
+                case 'guides':
+                    content = createGuideListScreen(currentParams.category);
+                    break;
+                case 'pdfViewer':
+                    content = createPdfViewerScreen(currentParams.pdfUrl, currentParams.guideTitle);
+                    break;
+                case 'about':
+                    content = createAboutScreen();
+                    break;
+                default:
+                    content = document.createElement('div');
+                    content.textContent = 'Sahifa topilmadi.';
+            }
+            appContainer.appendChild(content);
+        }
+
+        // --- Screen Components ---
+
+        function createHeader(title) { // showOfflineToggle olib tashlandi
+            const header = document.createElement('div');
+            header.className = 'header';
+            header.innerHTML = `
+                <button id="back-button" class="text-white text-xl"><i class="fas fa-arrow-left"></i></button>
+                <h1 class="flex-grow">${title}</h1>
+            `;
+
+            const backButton = header.querySelector('#back-button');
+            backButton.onclick = navigateBack; // navigateBack funksiyasini chaqirish
+
+            // Asosiy ekranda orqaga tugmasini yashirish
+            if (title === 'UstaMakon') {
+                backButton.style.display = 'none';
+            }
+
+            return header;
+        }
+
+        function createSplashScreen() {
+            const screen = document.createElement('div');
+            // Removed flex-grow and p-5 to allow content to take full height and width
+            screen.className = 'flex flex-col items-center justify-center flex-grow w-full h-full'; // Added w-full h-full
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'splash-screen-content'; // New class for styling
+            contentDiv.innerHTML = `
+                <div class="loading-spinner mb-5"></div>
+                <p id="splash-status" class="text-lg text-center mb-2"></p>
+                <div class="progress-bar-container">
+                    <div id="splash-progress" class="progress-bar"></div>
+                </div>
+                <div id="splash-error" class="text-sm text-center mt-5"></div>
+            `;
+            screen.appendChild(contentDiv); // Append contentDiv to screen
+
+            const statusElement = contentDiv.querySelector('#splash-status');
+            const progressElement = contentDiv.querySelector('#splash-progress');
+            const errorElement = contentDiv.querySelector('#splash-error');
+
+            const updateUI = () => {
+                statusElement.textContent = preloadManager.status;
+                progressElement.style.width = `${preloadManager.progress * 100}%`;
+                if (preloadManager.error) {
+                    errorElement.textContent = preloadManager.error;
+                } else {
+                    errorElement.textContent = '';
+                }
+            };
+
+            preloadManager.addListener(updateUI);
+            updateUI(); // Initial render
+
+            return screen;
+        }
+
+        function createErrorScreen() {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col items-center justify-center flex-grow p-4';
+            screen.prepend(createHeader("Xatolik"));
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'full-screen-message';
+            contentDiv.innerHTML = `
+                <i class="fas fa-exclamation-triangle icon text-red-500 text-6xl mb-6"></i>
+                <h2 class="text-2xl font-bold text-center mb-6">Xatolik yuz berdi:</h2>
+                <p id="error-message" class="text-red-700 text-center mb-8 text-lg"></p>
+                <button id="retry-button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Qayta yuklash</span>
+                </button>
+            `;
+            screen.appendChild(contentDiv);
+
+
+            const errorMessageElement = contentDiv.querySelector('#error-message');
+            errorMessageElement.textContent = preloadManager.error || "Noma'lum xatolik yuz berdi.";
+
+            contentDiv.querySelector('#retry-button').onclick = () => {
+                preloadManager.error = null; // Xato holatini tozalash
+                preloadManager.status = "Qayta yuklanmoqda...";
+                preloadManager.progress = 0;
+                checkOnboardingAndPreload(); // Qayta urinish
+            };
+            return screen;
+        }
+
+        function createMainAppScreen() {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+            screen.prepend(createHeader('UstaMakon')); // Oflayn toggle olib tashlandi
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'flex-grow overflow-y-auto'; // Kontentni aylantirish uchun
+            screen.appendChild(contentDiv);
+
+            dataService.fetchSubjects({ forceRefresh: true }).then(subjects => { // Har doim internetdan yuklashga urinish
+                const displayedSubjects = subjects;
+
+                if (displayedSubjects.length === 0) {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.className = 'full-screen-message';
+                    messageDiv.innerHTML = `
+                        <i class="fas fa-folder-open icon"></i>
+                        <h2>Fanlar mavjud emas.</h2>
+                        <p>Internet aloqangizni tekshiring yoki keyinroq urinib ko'ring.</p>
+                    `;
+                    contentDiv.appendChild(messageDiv);
+                } else {
+                    const gridContainer = document.createElement('div');
+                    gridContainer.className = 'grid-container';
+                    displayedSubjects.forEach(subject => {
+                        const card = createSubjectCard(subject); // offlineMode parametri olib tashlandi
+                        gridContainer.appendChild(card);
+                    });
+                    contentDiv.appendChild(gridContainer);
+                }
+            }).catch(error => {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'full-screen-message';
+                errorDiv.innerHTML = `
+                    <i class="fas fa-exclamation-circle icon"></i>
+                    <h2>Ma'lumotlarni yuklashda xatolik:</h2>
+                    <p>${error.message}</p>
+                `;
+                contentDiv.appendChild(errorDiv);
+            });
+
+            return screen;
+        }
+
+        function createSubjectCard(subject) { // offlineMode parametri olib tashlandi
+            const card = document.createElement('div');
+            const isDisabled = subject.topicListUrl === ''; // Faqat topicListUrl bo'lmasa disabled
+            card.className = `card ${isDisabled ? 'disabled' : ''}`;
+
+            let iconHtml = '';
+            if (subject.emoji) {
+                iconHtml = `<span class="card-icon">${subject.emoji}</span>`;
+            } else if (subject.iconUrl) {
+                iconHtml = `<img src="${subject.iconUrl}" class="w-16 h-16 object-contain mb-4" onerror="this.onerror=null;this.src='https://placehold.co/64x64/cccccc/333333?text=Icon';" alt="Fan ikonasi">`;
+            } else {
+                iconHtml = `<i class="fas fa-school card-icon text-blue-500"></i>`;
+            }
+
+            card.innerHTML = `
+                ${iconHtml}
+                <h3 class="card-title">${subject.name}</h3>
+                <p class="card-subtitle">${subject.categories.length} kategoriya</p>
+            `;
+
+            if (!isDisabled) {
+                card.onclick = () => navigateTo('categories', { subject: subject });
+            }
+            return card;
+        }
+
+        function createCategoryListScreen(subject) {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+            screen.prepend(createHeader(subject.name));
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'flex-grow overflow-y-auto';
+            screen.appendChild(contentDiv);
+
+            dataService.fetchCategoriesForSubject(subject, { forceRefresh: true }).then(categories => { // Har doim internetdan yuklashga urinish
+                const displayedCategories = categories;
+
+                if (displayedCategories.length === 0) {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.className = 'full-screen-message';
+                    messageDiv.innerHTML = `
+                        <i class="fas fa-folder-open icon"></i>
+                        <h2>Kategoriyalar mavjud emas.</h2>
+                        <p>Internet aloqangizni tekshiring yoki keyinroq urinib ko'ring.</p>
+                    `;
+                    contentDiv.appendChild(messageDiv);
+                } else {
+                    const gridContainer = document.createElement('div');
+                    gridContainer.className = 'grid-container';
+                    displayedCategories.forEach(category => {
+                        const card = createCategoryCard(category); // offlineMode parametri olib tashlandi
+                        gridContainer.appendChild(card);
+                    });
+                    contentDiv.appendChild(gridContainer);
+                }
+            }).catch(error => {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'full-screen-message';
+                errorDiv.innerHTML = `
+                    <i class="fas fa-exclamation-circle icon"></i>
+                    <h2>Kategoriyalarni yuklashda xatolik:</h2>
+                    <p>${error.message}</p>
+                `;
+                contentDiv.appendChild(errorDiv);
+            });
+
+            return screen;
+        }
+
+        function createCategoryCard(category) { // offlineMode parametri olib tashlandi
+            const card = document.createElement('div');
+            const isDisabled = category.guides.length === 0; // Faqat guides bo'lmasa disabled
+            card.className = `card ${isDisabled ? 'disabled' : ''}`;
+            card.innerHTML = `
+                <span class="card-icon">${category.iconEmoji}</span>
+                <h3 class="card-title">${category.name}</h3>
+                <p class="card-subtitle">${category.guides.length} qo'llanma</p>
+            `;
+            if (!isDisabled) {
+                card.onclick = () => navigateTo('guides', { category: category });
+            }
+            return card;
+        }
+
+        function createGuideListScreen(category) {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+            screen.prepend(createHeader(category.name));
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'flex-grow overflow-y-auto p-2';
+            screen.appendChild(contentDiv);
+
+            const displayedGuides = category.guides;
+
+            if (displayedGuides.length === 0) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'full-screen-message';
+                messageDiv.innerHTML = `
+                    <i class="fas fa-book-open icon"></i>
+                    <h2>Qo'llanmalar mavjud emas.</h2>
+                    <p>Bu kategoriyada hozircha qo'llanmalar yo'q.</p>
+                `;
+                contentDiv.appendChild(messageDiv);
+            } else {
+                displayedGuides.forEach(guide => {
+                    const card = createGuideListCard(guide); // offlineMode parametri olib tashlandi
+                    contentDiv.appendChild(card);
+                });
+            }
+
+            return screen;
+        }
+
+        function createGuideListCard(guide) { // offlineMode parametri olib tashlandi
+            const card = document.createElement('div');
+            const isDisabled = !guide.documentUrl; // Faqat hujjat URLsi yo'q bo'lsa disabled
+            card.className = `list-card ${isDisabled ? 'disabled' : ''}`;
+
+            card.innerHTML = `
+                <span class="list-card-icon">${guide.iconEmoji}</span>
+                <div class="list-card-content">
+                    <h3 class="list-card-title">${guide.title}</h3>
+                    <p class="list-card-subtitle">${guide.documentUrl ? "Hujjat mavjud" : "Hujjat yo'q"}</p>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400 ml-4"></i>
+            `;
+
+            if (!isDisabled) {
+                card.onclick = () => {
+                    if (guide.documentUrl) {
+                        console.log(`GuideListCard: PDF ko'rsatishga o'tmoqda. URL: ${guide.documentUrl}`);
+                        navigateTo('pdfViewer', { pdfUrl: guide.documentUrl, guideTitle: guide.title });
+                    } else {
+                        showSnackbar(`Bu qo'llanma uchun PDF fayl mavjud emas: ${guide.title}`, true);
+                    }
+                };
+            }
+
+            return card;
+        }
+
+        function createPdfViewerScreen(pdfUrl, guideTitle) {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+            screen.prepend(createHeader(guideTitle));
+
+            const mainContentArea = document.createElement('div'); // PDF canvas va loading state uchun asosiy kontent maydoni
+            mainContentArea.className = 'flex-grow flex flex-col items-center justify-center overflow-y-auto'; // Bu qism aylantiriladi
+            screen.appendChild(mainContentArea);
+
+            const loadingState = document.createElement('div');
+            loadingState.className = 'flex flex-col items-center justify-center p-5 text-center';
+            loadingState.innerHTML = `
+                <div class="loading-spinner mb-5"></div>
+                <p id="pdf-status" class="text-lg text-center mb-2 text-white"></p>
+                <div class="progress-bar-container w-full max-w-sm">
+                    <div id="pdf-progress" class="progress-bar"></div>
+                </div>
+            `;
+            mainContentArea.appendChild(loadingState); // loadingState ni mainContentArea ga qo'shish
+
+            const pdfCanvas = document.createElement('canvas');
+            pdfCanvas.id = 'pdf-canvas';
+            pdfCanvas.className = 'hidden'; // Dastlab yashirish
+            mainContentArea.appendChild(pdfCanvas); // pdfCanvas ni mainContentArea ga qo'shish
+
+            const pdfControls = document.createElement('div');
+            pdfControls.id = 'pdf-controls';
+            pdfControls.className = 'pdf-controls hidden';
+            pdfControls.innerHTML = `
+                <button id="prev-page"><i class="fas fa-chevron-left"></i> Oldingi</button>
+                <span id="page-num"></span> / <span id="page-count"></span>
+                <button id="next-page">Keyingi <i class="fas fa-chevron-right"></i></button>
+                <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+                <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+                <button id="reload-pdf"><i class="fas fa-sync-alt"></i> Qayta yuklash</button>
+            `;
+            screen.appendChild(pdfControls); // pdfControls ni screen ga qo'shish, shunda u pastda qoladi
+
+            // Elementlarga murojaatlarni ularni DOMga qo'shgandan keyin olish
+            const prevPageBtn = pdfControls.querySelector('#prev-page');
+            const nextPageBtn = pdfControls.querySelector('#next-page');
+            const zoomInBtn = pdfControls.querySelector('#zoom-in');
+            const zoomOutBtn = pdfControls.querySelector('#zoom-out');
+            const reloadPdfBtn = pdfControls.querySelector('#reload-pdf');
+            const pageNumSpan = pdfControls.querySelector('#page-num');
+            const pageCountSpan = pdfControls.querySelector('#page-count');
+
+
+            const statusElement = loadingState.querySelector('#pdf-status');
+            const progressElement = loadingState.querySelector('#pdf-progress');
+
+            let pdfDoc = null;
+            let pageNum = 1;
+            let pageRendering = false;
+            let pageNumPending = null;
+            let currentScale = 1.0; // Masshtabni nazorat qilish uchun
+
+            async function renderPage(num) {
+                pageRendering = true;
+                const page = await pdfDoc.getPage(num);
+                
+                // Joriy masshtabdan foydalanish
+                const viewport = page.getViewport({ scale: currentScale });
+
+                const context = pdfCanvas.getContext('2d');
+                pdfCanvas.height = viewport.height;
+                pdfCanvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport,
+                };
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(() => {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+
+                pageNumSpan.textContent = num;
+            }
+
+            function queueRenderPage(num) {
+                if (pageRendering) {
+                    pageNumPending = num;
+                } else {
+                    renderPage(num);
+                }
+            }
+
+            function onPrevPage() {
+                if (pageNum <= 1) {
+                    return;
+                }
+                pageNum--;
+                queueRenderPage(pageNum);
+            }
+
+            function onNextPage() {
+                if (pageNum >= pdfDoc.numPages) {
+                    return;
+                }
+                pageNum++;
+                queueRenderPage(pageNum);
+            }
+
+            function onZoomIn() {
+                currentScale = Math.min(currentScale + 0.25, 3.0); // Maksimal zoom chegarasi
+                queueRenderPage(pageNum);
+            }
+
+            function onZoomOut() {
+                currentScale = Math.max(currentScale - 0.25, 0.5); // Minimal zoom chegarasi
+                queueRenderPage(pageNum);
+            }
+
+            // Tugmalarga hodisa tinglovchilarni ularni DOMga qo'shgandan keyin biriktirish
+            prevPageBtn.onclick = onPrevPage;
+            nextPageBtn.onclick = onNextPage;
+            zoomInBtn.onclick = onZoomIn;
+            zoomOutBtn.onclick = onZoomOut;
+            reloadPdfBtn.onclick = () => loadPdf(); // loadPdf ga to'g'ridan-to'g'ri chaqirish
+
+            async function loadPdf() {
+                loadingState.classList.remove('hidden');
+                pdfCanvas.classList.add('hidden');
+                pdfControls.classList.add('hidden');
+                statusElement.textContent = "PDF yuklanmoqda...";
+                progressElement.style.width = '0%';
+                let errorMessage = null;
+
+                try {
+                    console.log(`PdfViewerScreen: PDF yuklash boshlandi. URL: ${pdfUrl}`);
+                    progressElement.style.width = '10%';
+                    statusElement.textContent = "Fayl yuklanmoqda...";
+                    await new Promise(resolve => setTimeout(resolve, 300));
+
+                    const bytes = await pdfService.loadPdfBytes(pdfUrl);
+                    console.log(`PdfViewerScreen: PDF baytlari olindi. Mavjudligi: ${!!bytes}, uzunligi: ${bytes ? bytes.length : 0}`);
+
+
+                    progressElement.style.width = '70%';
+                    statusElement.textContent = "Fayl yuklandi. Ko'rsatishga tayyorlanmoqda...";
+                    await new Promise(resolve => setTimeout(resolve, 300));
+
+                    if (bytes && bytes.length > 0) {
+                        const pdfData = bytes.buffer;
+                        console.log('PdfViewerScreen: PDF.js hujjatni yuklamoqda...');
+                        pdfDoc = await pdfjsLib.getDocument({ data: pdfData }).promise;
+                        console.log('PdfViewerScreen: PDF hujjat yuklandi. Sahifalar soni:', pdfDoc.numPages);
+                        pageCountSpan.textContent = pdfDoc.numPages;
+                        pageNum = 1;
+
+                        // Birinchi sahifani yuklashda masshtabni hisoblash
+                        const firstPage = await pdfDoc.getPage(1);
+                        const initialViewport = firstPage.getViewport({ scale: 1 });
+                        const desiredWidth = pdfCanvas.clientWidth;
+                        currentScale = desiredWidth / initialViewport.width; // Kenglikka moslashish
+
+                        renderPage(pageNum);
+
+                        loadingState.classList.add('hidden');
+                        pdfCanvas.classList.remove('hidden');
+                        pdfControls.classList.remove('hidden');
+                        progressElement.style.width = '100%';
+                        statusElement.textContent = "Tayyor!";
+                    } else {
+                        throw new Error("PDF faylini yuklab bo'lmadi yoki bo'sh. Internetni yoqib qayta yuklashni bosing.");
+                    }
+                } catch (e) {
+                    console.error('PdfViewerScreen: PDF yuklashda xatolik:', e);
+                    errorMessage = `Xatolik: ${e.message}`;
+                    loadingState.classList.remove('hidden');
+                    pdfCanvas.classList.add('hidden');
+                    pdfControls.classList.add('hidden');
+                    statusElement.textContent = "Xatolik yuz berdi!";
+                    progressElement.style.width = '0%';
+
+                    // Xato xabarini ko'rsatish
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'full-screen-message';
+                    errorDiv.innerHTML = `
+                        <i class="fas fa-exclamation-triangle icon"></i>
+                        <h2>PDFni yuklashda xatolik yuz berdi:</h2>
+                        <p>${errorMessage}</p>
+                        <button id="error-retry-button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2 mt-4">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Qayta urinish</span>
+                        </button>
+                    `;
+                    mainContentArea.innerHTML = ''; // Oldingi yuklash holatini tozalash
+                    mainContentArea.appendChild(errorDiv);
+                    errorDiv.querySelector('#error-retry-button').onclick = () => loadPdf();
+                }
+            }
+
+            loadPdf(); // Ekranga kirganda PDFni yuklash
+
+            // Oynani o'lchash hodisasi tinglovchisi
+            window.addEventListener('resize', async () => {
+                if (pdfDoc && !pageRendering) { // Agar PDF yuklangan bo'lsa va sahifa chizilmayotgan bo'lsa
+                    console.log('Oyna o\'lchami o\'zgardi, PDF sahifasi qayta chizilmoqda.');
+                    // Joriy sahifani olish
+                    const currentPage = await pdfDoc.getPage(pageNum);
+                    const currentViewport = currentPage.getViewport({ scale: 1 });
+                    const desiredWidth = pdfCanvas.clientWidth;
+                    currentScale = desiredWidth / currentViewport.width; // Yangi kenglikka moslashish
+
+                    renderPage(pageNum); // Joriy sahifani qayta chizish
+                }
+            });
+
+            return screen;
+        }
+
+        function createOnboardingScreen() {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+
+            const pageView = document.createElement('div');
+            pageView.className = 'flex-grow relative overflow-hidden';
+            screen.appendChild(pageView);
+
+            const pages = [
+                { title: "Xush kelibsiz!", description: "UstaMakon ilovasi orqali turli sohalardagi qo'llanmalarni toping.", icon: "fas fa-school" },
+                { title: "Oson Foydalanish", description: "Kerakli fan yoki mavzuni tanlang va PDF hujjatlarni o'qing.", icon: "fas fa-file-pdf" },
+                { title: "Ma'lumotlar doimiy yangi", description: "Barcha ma'lumotlar internetdan yuklanadi va doim yangilanadi.", icon: "fas fa-cloud-download-alt" }, // Matn o'zgartirildi
+            ];
+
+            let currentPageIndex = 0;
+
+            const renderOnboardingPage = (index) => {
+                pageView.innerHTML = '';
+                const pageData = pages[index];
+                const pageDiv = document.createElement('div');
+                pageDiv.className = 'onboarding-page';
+                pageDiv.innerHTML = `
+                    <i class="${pageData.icon}"></i>
+                    <h2>${pageData.title}</h2>
+                    <p>${pageData.description}</p>
+                `;
+                pageView.appendChild(pageDiv);
+
+                updateDots(index);
+                updateButtonText(index);
+            };
+
+            const updateDots = (activeIndex) => {
+                dotsContainer.innerHTML = '';
+                pages.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.className = `onboarding-dot ${index === activeIndex ? 'active' : ''}`;
+                    dotsContainer.appendChild(dot);
+                });
+            };
+
+            const updateButtonText = (activeIndex) => {
+                nextButton.textContent = activeIndex < pages.length - 1 ? "Keyingisi" : "Boshlash";
+            };
+
+            const dotsContainer = document.createElement('div');
+            dotsContainer.className = 'onboarding-dots';
+
+            const footer = document.createElement('div');
+            footer.className = 'onboarding-footer';
+            const nextButton = document.createElement('button');
+            nextButton.textContent = "Keyingisi";
+            nextButton.onclick = () => {
+                if (currentPageIndex < pages.length - 1) {
+                    currentPageIndex++;
+                    renderOnboardingPage(currentPageIndex);
+                } else {
+                    const settingsBox = JSON.parse(localStorage.getItem(HIVE_SETTINGS_BOX_NAME) || '{}');
+                    settingsBox[ONBOARDING_DONE_KEY] = true;
+                    localStorage.setItem(HIVE_SETTINGS_BOX_NAME, JSON.stringify(settingsBox));
+                    checkOnboardingAndPreload();
+                }
+            };
+            footer.appendChild(dotsContainer);
+            footer.appendChild(nextButton);
+            screen.appendChild(footer);
+
+            renderOnboardingPage(currentPageIndex); // Birinchi sahifani yuklash
+
+            return screen;
+        }
+
+        function createAboutScreen() {
+            const screen = document.createElement('div');
+            screen.className = 'flex flex-col flex-grow';
+            screen.prepend(createHeader("Ilova haqida"));
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'about-screen overflow-y-auto';
+            contentDiv.innerHTML = `
+                <i class="fas fa-info-circle icon"></i>
+                <h2>UstaMakon</h2>
+                <p>Bu ilova turli sohalardagi qo'llanmalarni oson topish va o'qish uchun mo'ljallangan.</p>
+                <h3 class="text-xl font-bold mt-4">Tuzuvchi:</h3>
+                <div class="contact-info-container mt-4">
+                    <div class="contact-info-item">
+                        <i class="fas fa-user"></i><span>Ism: Biosteenyc | Abdulhakim Xayitboyev</span>
+                    </div>
+                    <h4 class="text-lg font-bold mt-4">Aloqa:</h4>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i><span>Telefon: <a href="tel:+998333490930">+998-(33)-349-09-30</a></span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-telegram-plane"></i><a href="https://t.me/Biosteenyc" target="_blank">Telegram: Biosteenyc</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-youtube"></i><a href="https://www.youtube.com/@Biosteenyc" target="_blank">YouTube: Biosteenyc</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-globe"></i><a href="https://biosteenyc.github.io" target="_blank">Rasmiy sayt: biosteenyc.github.io</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-mobile-alt"></i><a href="https://play.google.com/store/apps/dev?id=7419772761516862615" target="_blank">Play Market: Biosteenyc</a>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm mt-8">Versiya: 2.2.0</p>
+                <button id="download-app-btn" class="mt-8 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Yuklab olish</span>
+                </button>
+            `;
+            screen.appendChild(contentDiv);
+
+            // Download Modal
+            const downloadModal = document.createElement('div');
+            downloadModal.id = 'download-modal';
+            downloadModal.className = 'modal-overlay';
+            downloadModal.innerHTML = `
+                <div class="modal-content">
+                    <button class="modal-close-btn" id="close-download-modal">&times;</button>
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Ilovani yuklab oling</h3>
+                    <a href="https://example.com/ustamakon-windows.zip" target="_blank" class="download-option-btn">
+                        <i class="fab fa-windows"></i>
+                        <span>Windows versiyasi (tez orada)</span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=7419772761516862615" target="_blank" class="download-option-btn">
+                        <i class="fab fa-google-play"></i>
+                        <span>Play Marketdan o'rnatish</span>
+                    </a>
+                    <button id="install-web-app-btn" class="download-option-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>Web ilova sifatida o'rnatish</span>
+                    </button>
+                    <p class="text-sm text-gray-600 mt-4">
+                        Web ilova sifatida o'rnatish uchun brauzeringizning menyusidan "Bosh ekraniga qo'shish" yoki "O'rnatish" tugmasini bosing.
+                    </p>
+                </div>
+            `;
+            document.body.appendChild(downloadModal);
+
+            // Event Listeners for Download Modal
+            const downloadAppBtn = contentDiv.querySelector('#download-app-btn');
+            const closeDownloadModalBtn = downloadModal.querySelector('#close-download-modal');
+            const installWebAppBtn = downloadModal.querySelector('#install-web-app-btn');
+
+            downloadAppBtn.onclick = () => {
+                downloadModal.classList.add('show');
+            };
+
+            closeDownloadModalBtn.onclick = () => {
+                downloadModal.classList.remove('show');
+            };
+
+            downloadModal.onclick = (event) => {
+                if (event.target === downloadModal) {
+                    downloadModal.classList.remove('show');
+                }
+            };
+
+            // For PWA installation prompt (modern browsers)
+            // Note: This is a simplified approach. A full PWA requires a manifest.json and service worker.
+            // This button will just provide instructions as direct programmatic installation is complex.
+            installWebAppBtn.onclick = () => {
+                showSnackbar("Web ilova sifatida o'rnatish uchun brauzeringiz menyusidan 'Bosh ekraniga qo'shish' yoki 'O'rnatish' tugmasini qidiring.", false);
+                downloadModal.classList.remove('show'); // Modalni yopish
+            };
+
+            return screen;
+        }
+
+
+        // --- Ilovani ishga tushirish logikasi ---
+        async function checkOnboardingAndPreload() {
+            await initCryptoJS(); // CryptoJS ni ishga tushirish
+            const settingsBox = JSON.parse(localStorage.getItem(HIVE_SETTINGS_BOX_NAME) || '{}');
+            const onboardingDone = settingsBox[ONBOARDING_DONE_KEY] ?? false;
+
+            if (!onboardingDone) {
+                navigateTo('onboarding');
+            } else {
+                // Asosiy oqim boshlanishida tarixni tozalash
+                historyStack = [];
+                navigateTo('splash');
+                await preloadManager.preloadAllData(); // forceRefresh parametri olib tashlandi
+
+                // Avtomatik o'tish uchun kechikish
+                setTimeout(() => {
+                    if (preloadManager.error) {
+                        navigateTo('error');
+                    } else {
+                        navigateTo('main');
+                    }
+                }, 1500); // 1.5 soniya kechikish
+            }
+        }
+
+        // Brauzerning orqaga tugmasini boshqarish endi ishlatilmaydi, chunki o'zimizning navigateBack bor
+        // window.onpopstate = () => { navigateTo('main'); }; // Bu qator olib tashlandi
+
+        // Ilovani ishga tushirish
+        checkOnboardingAndPreload();
+    </script>
+</body>
+</html>
