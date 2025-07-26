@@ -163,42 +163,6 @@
     ]
   },
   {
-    "category_name": "Internet va ulanish muammolari",
-    "icon_emoji": "🌐",
-    "guides": [
-      {
-        "title": "Internet ishlamay qoldi",
-        "icon_emoji": "❌",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_ishlamay_qoldi.ustamakon_doc"
-      },
-      {
-        "title": "Internet sekin ishlamoqda",
-        "icon_emoji": "🐢",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_sekin_ishlamoqda.ustamakon_doc"
-      },
-      {
-        "title": "Internet ko'p sarf bo'lyapti",
-        "icon_emoji": "💸",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/internet_kop_sarf_bolyapti.ustamakon_doc"
-      },
-      {
-        "title": "Wi-Figa ulanmoqchiman, ammo wifi ko’rinmayapti.",
-        "icon_emoji": "📶",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/wifiga_ulanmoqchiman_ammo_wifi_korinmayapti.ustamakon_doc"
-      },
-      {
-        "title": "Bluetooth nega kerak?",
-        "icon_emoji": "🔵",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/bluetooth_nega_kerak.ustamakon_doc"
-      },
-      {
-        "title": "Telefonda Internet tarqatishni qanday usullari bor?",
-        "icon_emoji": "📡",
-        "document_url": "https://raw.githubusercontent.com/BIOSTEENYC/ustamakon/main/documents/phone_topics/internet_va_ulanish_muammolari/telefonda_internet_tarqatishni_qanday_usullari_bor.ustamakon_doc"
-      }
-    ]
-  },
-  {
     "category_name": "Media va fayllar",
     "icon_emoji": "📁",
     "guides": [
