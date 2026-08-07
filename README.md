@@ -44,6 +44,5 @@ yoki Fayl menejerida
   <img width="35%" alt="Screenshot 8" src="https://github.com/user-attachments/assets/fbe7b13c-c30f-4e69-bcb4-c3415af60ebc" />
 </p>
 
-### 👨‍💻 Motivatsiya va Ilhom bering:
-[▶️ Dasturlash rivoji uchun]
+### 👨‍💻 Motivatsiya va Ilhom bering: [▶️ Dasturlash rivoji uchun]
 ![IlhomKartasi](./motivatsiya.png)
