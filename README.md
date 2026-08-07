@@ -43,7 +43,7 @@ yoki Fayl menejerida
   <img width="35%" alt="Screenshot 7" src="https://github.com/user-attachments/assets/84c6342a-0b47-4608-9c5a-f4c99719adca" />
   <img width="35%" alt="Screenshot 8" src="https://github.com/user-attachments/assets/fbe7b13c-c30f-4e69-bcb4-c3415af60ebc" />
 </p>
-> ddd
+
 ### 👨‍💻 Motivatsiya va Ilhom bering:
 [▶️ Dasturlash rivoji uchun]
 ![IlhomKartasi](./motivatsiya.png)
