@@ -83,7 +83,7 @@ class _WebAdminLoginGateState extends State<WebAdminLoginGate> {
   final _passController = TextEditingController();
 
   // Admin Paroli (Xohlasangiz o'zgartiring)
-  final String _adminPassword = "ustamakonadmin";
+  final String _adminPassword = "USTAMAKON-ADMIN";
 
   @override
   void dispose() {
