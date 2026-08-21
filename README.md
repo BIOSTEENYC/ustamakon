@@ -15,8 +15,8 @@ Ishga tushirish tugmasini bosing tamom.
 _**Desktop versiyada**_
 Windows:
 
-- Windows tugmasini bosib UstaMakon.zip faylni yuklang.
-- Zipdan chiqaring va UstaMakon.exe faylga bosing.
+- Windows tugmasini bosib UstaMakonWindows.exe faylni yuklang.
+- UstaMakonWindows.exe faylga bosing.
 - Smart Screen bloklasa: "More info" -> "Run anyway" bosing.
 - [ILOVANI ZARARLI TOMONI YOʻQ, VIRUS EMAS. SHUNCHAKI PULLIK MICROSOFT HISOBIM YOʻQLIGI UCHUN SERTIFIKATLAY OLMADIM. SMART SCREEN SERTIFIKATI YOʻQ BEMALOL ISHLATAVERING].
 
